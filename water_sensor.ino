@@ -13,7 +13,7 @@ void setup()
 void loop()
 {
   val_analogique=analogRead(capteur_A); 
-Serial.println(val_analogique);
+  Serial.println(val_analogique);
 if(val_analogique < 100) 
   {
     Serial.println("water level is correct"); 
@@ -24,7 +24,5 @@ else
     Serial.println("water level is dropped");
     delay(10); 
   }
-val_analogique=analogRead(capteur_A); 
-Serial.println(val_analogique);
   delay(1000);
 }
